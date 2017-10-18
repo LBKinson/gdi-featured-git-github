@@ -58,13 +58,13 @@
 			<section>
 				<h3>Welcome!</h3>
 				<div class="left-align">
-					<p>Girl Develop It is here to provide affordable and accessible programs to learn software through mentorship and hands-on instruction.</p>
+					<p><strong>Girl Develop It</strong> is here to provide affordable and accessible programs to learn software through mentorship and hands-on instruction.</p>
 					<p class="green">Some "rules"</p>
 					<ul>
 						<li>We are here for you!</li>
-						<li>Every question is important</li>
-						<li>Help each other</li>
-						<li>Have fun</li>
+						<li>Every question is important.</li>
+						<li>Help each other.</li>
+						<li>Have fun.</li>
 					</ul>
 				</div>
 			</section>
@@ -75,18 +75,55 @@
 					<p class="blue">Tell us about yourself.</p>
 					<ul>
 						<li>Who are you?</li>
+						<li>Do you have any pets?</li>
+						<li>What's your can't-live-without snack?</li>
 						<li>What do you hope to get out of the class?</li>
 					</ul>
+					<div style="display: flex; height: 350px; justify-content: space-around; padding-top: 25px;">
+						<img style="height: 100%;"src="https://scontent-lax3-2.cdninstagram.com/t51.2885-15/e35/21910845_306840583124640_4922809403490435072_n.jpg" />
+						<img style="height: 100%;"src="https://scontent-lax3-2.cdninstagram.com/t51.2885-15/e35/21910051_489439294750944_7776397267069566976_n.jpg" />
+				</div>
 				</div>
 			</section>
 
 			<section>
-				<h3>What we will cover today</h3>
+				<h3>Thanks, Fender</h3>
+				<div class="fragment">
+					We are a <span class="green">guitar</span> company...
+				</div>
+				<div class="fragment">
+					...but also a <span class="green">technology</span> company.
+					<div style="display: flex; width: 150%; margin-left: -25%; justify-content: space-around;">
+						<img style="max-height: 450px;" src="images/lbk/fenderPlay1.png" />
+						<img style="max-height: 450px;" src="images/lbk/fenderPlay2.png" />
+						<img style="max-height: 450px;" src="http://is2.mzstatic.com/image/thumb/Purple60/v4/e6/52/46/e652462b-1169-f875-d362-decd4e6d70a4/source/392x696bb.jpg" />
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<h3>We're hiring!</h3>
+				<div><img src="images/lbk/fenderHiring.png" /></div>
+			</section>
+
+			<section>
+				<h3>What we will cover in this class</h3>
 				<ul>
 					<li class="fragment">What is version control and why should we care?</li>
 					<li class="fragment">Basics of Git: the essential commands</li>
 					<li class="fragment">GitHub (or, a little Git between friends)</li>
 				</ul>
+				<div
+					class="fragment"
+					style="transform: rotate(-20deg); right: 0; margin-top: -425px; z-index:2; position: absolute; background-color: red; padding: 5px; border-radius: 10px; color: white;">
+					PAIRING!
+				</div>
+			</section>
+
+			<section>
+				<div style="height: 650px;">
+					<img style="max-height: 650px;" src="https://scontent-lax3-2.cdninstagram.com/t51.2885-15/e35/18252333_1255906587861578_7995440332877594624_n.jpg" />
+				</div>
 			</section>
 
 			<!-- Version control-->
@@ -94,12 +131,12 @@
 				<h3>What is version control?</h3>
 				<p>Version control allows you (and your team) to…</p>
 				<div class="fragment">
-					<h4>Collaborate</h4>
-					<p>Create anything with other people, from academic papers to entire websites and applications.</p>
+					<h4 style="padding-top: 35px;"><span class="green" style="text-transform:uppercase;">Collaborate</span></h4>
+					<p>Create with other people.</p>
 				</div>
 				<div class="fragment">
-					<h4>Track and revert changes</h4>
-					<p>Mistakes happen. Wouldn't it be nice if you could see the changes that have been made and go "back in time" to fix something that went wrong?
+					<h4 style="padding-top: 35px;"><span class="green" style="text-transform:uppercase;">Track and revert changes</span></h4>
+					<p>Mistakes happen. Git allows us too "back in time" to fix something that went wrong.
 				</div>
 			</section>
 
@@ -107,16 +144,27 @@
 				<h3>You already manage versions of your work!</h3>
 				<p> Do you have files somewhere that look like this?</p>
 				<pre><code>
-Resume-September2013.docx
-Resume-for-Duke-job.docx
-ResumeOLD.docx
-ResumeNEW.docx
-ResumeREALLYREALLYNEW.docx
-					</code></pre>
+Resume-September2017.doc
+Resume-for-Duke-job.doc
+ResumeOLD.doc
+ResumeNEW.doc
+ResumeREALLYREALLYTHISONE!!.doc
+				</code></pre>
 				<div class="fragment">
 					<p>You invented your own version control!</p>
-					<p>But, we can do it <span class="green">so much</span> better with Version Control tools</p>
+					<p>But, we can do it <span class="green">easier and faster</span> with Version Control tools.</p>
 				</div>
+			</section>
+
+			<section>
+				<h3>You might already use VC tools!</h3>
+				<p>Have you ever used...</p>
+				<ul>
+					<li class="fragment">Google Docs?</li>
+					<li class="fragment">Dropbox?</li>
+					<li class="fragment">Wallpaper?</li>
+				</ul>
+				<p class="fragment green" style="padding-top:4rem;">These are all examples of version control!</p>
 			</section>
 
 			<!-- History -->
@@ -138,12 +186,22 @@ Initial revision of "git", the information manager from hell
 								</code></pre>
 			</section>
 
+			<section>
+				<h3>Chapter 2: Git is Named</h3>
+				<ul>
+					<li>Random three-letter combination that is pronounceable, and not actually used by any common UNIX command. The fact that it is a mispronunciation of "get" may or may not be relevant.</li>
+					<li>Stupid. Contemptible and despicable. Simple. Take your pick from the dictionary of slang.</li>
+					<li><span class="green">When it works</span>: "global information tracker"; you're in a good mood, and it actually works for you. Angels sing, and a light suddenly fills the room.</li>
+					<li><span style="color: red;">When it breaks</span>: "g*dd*mn idiotic truckload [of sh*t"]
+				</ul>
+			</section>
+
 			<!-- Types -->
 			<section>
 				<h3>Version Control Types</h3>
 				<br>
 				<h4>Centralized Version Control</h4>
-				<p>Examples: CVS, SVN</p>
+				<p>Examples: CVS, SVN, Perforce</p>
 				<br/>
 				<h4>Distributed Version Control</h4>
 				<p>Examples: Git, Mercurial</p>
@@ -153,67 +211,76 @@ Initial revision of "git", the information manager from hell
 				<h3>Centralized Version Control</h3>
 				<img src="images/centralized-vc.png" alt="one central server with each person pushing changes to the main server" />
 				<p>One central server, each client (person) checks out and merges changes to main server</p>
-				<p class="fragment">...NOT how Git works!</p>
+				<p class="fragment green">...NOT how Git works!</p>
 			</section>
 
 			<section>
 				<h3>Distributed Version Control</h3>
 				<img src="images/distributed-vc.png" alt="each person works on her own local copy; each copy is reconciled with the main copy on the server" />
 				<p>Each client (person) has a local repository, which they can then reconcile with the main server.</p>
-				<p class="fragment">...this is how Git does it!</p>
+				<p class="fragment green">...AKA how Git does it!</p>
 			</section>
 
 			<!-- Git-->
 			<section>
 				<h3>Why Use Git?</h3>
 				<ul>
-					<li><span class="green">Fast!</span> Access information quickly and efficiently.</li>
-					<li><span class="green">Distributed!</span> Everyone has her own local copy.</li>
-					<li><span class="green">Mind-bogglingly scalable!</span> Enables potentially thousands (millions!) of developers to work on single project.
-						<li><span class="green">Local!</span> You don't need a network connection to use it. You only need a remote server if you want to share your code with others (e.g., using GitHub).</li>
-						<li><span class="green">Branches!</span> Keep your coding experiments separate from code that is already working.</li>
-						<li>Everyone has a local copy of the <span class="green">shared files</span> and the <span class="green">history.</span></li>
+					<li style="padding-top: 15px;"><span class="green" style="font-weight: bold;">Fast!</span> Access information quickly and efficiently.</li>
+					<li style="padding-top: 15px;"><span class="green" style="font-weight: bold;">Distributed!</span> Everyone has her own local copy.</li>
+					<li style="padding-top: 15px;"><span class="green" style="font-weight: bold;">Mind-bogglingly scalable!</span> Enables potentially thousands (millions!) of developers to work on a single project.
+					<li style="padding-top: 15px;"><span class="green" style="font-weight: bold;">Local!</span> You don't need a network connection to use it. You only need a remote server if you want to share your code with others (e.g., using GitHub).</li>
+					<li style="padding-top: 15px;"><span class="green" style="font-weight: bold;">Branches!</span> Keep your coding experiments separate from code that is already working.</li>
+					<li style="padding-top: 15px;"><span class="green" style="font-weight: bold;">Accountability!</span>Everyone has a local copy of the shared files and the history.</li>
 				</ul>
 			</section>
 
 			<!-- Installation and Setup-->
 			<section>
-				<section>
-					<h3>Installation and Setup</h3>
-					<a href="http://git-scm.com/downloads" alt="Download latest version of Git" target="_blank">
-						<p>Install git</p>
-						<img src="images/install-git.png" alt="Download latest version of Git" />
-					</a>
-				</section>
-				<section>
-					<h3>Installation and Setup</h3>
-					<p>Setup name and email in <code>git config</code></p>
-					<pre><code contenteditable class="bash">
+				<h3>Installation and Setup</h3>
+				<a href="http://git-scm.com/downloads" alt="Download latest version of Git" target="_blank">
+					<p>Install git from here: <span class="green">https://git-scm.com/downloads</span></p>
+					<img src="images/install-git.png" alt="Download latest version of Git" />
+				</a>
+			</section>
+
+			<section>
+				<h3>Installation and Setup</h3>
+				<p>Setup <span class="green">name</span> and <span class="green">email</span> in <code>git config</code></p>
+				<pre><code contenteditable class="bash">
 $ git config --global user.name "Your Name Here"
 # Sets the default name for git to use when you commit
-						</code></pre>
-					<pre><code contenteditable class="bash">
+					</code></pre>
+				<pre><code contenteditable class="bash">
 $ git config --global user.email "your_email@example.com"
 # Sets the default email for git to use when you commit
-						</code></pre>
-					<pre><code contenteditable class="bash">
+					</code></pre>
+				<pre><code contenteditable class="bash">
 $ git config --list
-						</code></pre>
-				</section>
-				<section>
-					<h3>Installation and Setup</h3>
-					<p>Setup SSH keys</p>
-					<p><span class="green">SSH keys</span> allow you to interact with your Git server without having to type your username and password all the time.</p>
-					<p><a href="https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/">Generating SSH Keys</a></p>
-					<p><a href="https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/">Adding an SSH Key to your GitHub Account</a></p>
-				</section>
-				<section>
-					<h3>Installation and Setup</h3>
-					<p>Setup the Default Text Editor</p>
-					<p> By default Git is set up to use Vim as the text editor.</p>
-					<p>(<span class="green">esc</span> + <span class="green">:q</span> or <span class="green">:q!</span> to get out of Vim)</p>
-					<p>Follow <a href="https://help.github.com/articles/associating-text-editors-with-git/">these instructions</a> to change your default text editor to whatever you prefer. </p>
-				</section>
+# Check your config variables... let's do it!
+					</code></pre>
+			</section>
+			<section>
+				<div
+					style="transform: rotate(-20deg); right: 0; margin-top: -190px; z-index:2; position: absolute; background-color: red; padding: 5px; border-radius: 10px; color: white;">
+					PAIRING!
+				</div>
+				<h3>Installation and Setup</h3>
+				<p>Setup SSH keys</p>
+				<p><span class="green">SSH keys</span> allow you to interact with your Git server without having to type your username and password all the time.</p>
+				<p><a href="https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/">Generating SSH Keys</a></p>
+				<p><a href="https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/">Adding an SSH Key to your GitHub Account</a></p>
+			</section>
+
+			<section>
+				<div
+					style="transform: rotate(-20deg); right: 0; margin-top: -190px; z-index:2; position: absolute; background-color: red; padding: 5px; border-radius: 10px; color: white;">
+					PAIRING!
+				</div>
+				<h3>Installation and Setup</h3>
+				<p>Setup the Default Text Editor</p>
+				<p> By default Git is set up to use Vim as the text editor.</p>
+				<p>(<span class="green">esc</span> + <span class="green">:q</span> or <span class="green">:q!</span> to get out of Vim)</p>
+				<p>Follow <a href="https://help.github.com/articles/associating-text-editors-with-git/">these instructions</a> to change your default text editor to whatever you prefer. </p>
 			</section>
 
 			<!-- First commands-->
@@ -226,11 +293,12 @@ $ pwd #make sure you're in your home directory
 						</code></pre>
 				<p>Create a "working directory"</p>
 				<pre><code contenteditable class ="bash">
-$ mkdir my-repo
-$ cd my-repo
+$ mkdir grocery-list
+$ cd grocery-list
 						</code></pre>
 				<p>Initialize repository with Git</p>
 				<pre><code contenteditable class ="bash">
+$ git status
 $ git init
 $ git status
 						</code></pre>
@@ -260,7 +328,8 @@ $ git status
 				<p>Stage and commit the change</p>
 				<pre><code contenteditable class="bash">
 $ git add README.md
-$ git commit -m "First commit. Added README to repository."
+$ git status
+$ git commit -m "Initial commit. Added README to repository."
 						</code></pre>
 				<p>A <a href="https://alistapart.com/article/the-art-of-the-commit" target="_blank">good commit message</a> acts like a headline to a newspaper article (but not clickbait!)</p>
 			</section>
@@ -273,12 +342,13 @@ $ git commit -m "First commit. Added README to repository."
 					<li class="fragment">When we <span class="green">add</span> a new file, we tell Git to add the file to the repository to be tracked. </li>
 					<li class="fragment">This is also called <span class="green">staging</span> a file. A snapshot of our changes is now in the <span class="green">staging area</span> (aka the <span class="green">index</span>, aka the <span class="green">cache</span>), ready to be saved.
 					</li>
-					<li class="fragment">A <span class="green">commit</span> saves the <span class="blue">changes</span> made to a file, not the file as a whole. The commit will have a unique ID (hash) so we can track which changes were committed when and by whom.</li>
+					<li class="fragment">A <span class="green">commit</span> saves the <span class="blue">changes</span> made to a file, not the file as a whole. The commit will have a unique ID (<span class="green">hash</span>) so we can track which changes were committed when and by whom.</li>
 				</ul>
 			</section>
 			<section>
 				<h3>Look at Your Progress</h3>
 				<pre><code contenteditable class="bash">
+$ git status
 $ git log
 						</code></pre>
 				<pre><code contenteditable class="bash">
@@ -286,12 +356,16 @@ $ git log
  Author: Your name &lt;you@your-email.com>
  Date:   [DATE HERE]
 
-      First commit. Added README to repository.
-							</code></pre>
+      Initial commit. Added README to repository.
+				</code></pre>
 			</section>
 
 			<!-- Develop It -->
 			<section>
+				<div
+					style="transform: rotate(-20deg); right: 0; margin-top: -120px; z-index:2; position: absolute; background-color: red; padding: 5px; border-radius: 10px; color: white;">
+					PAIRING!
+				</div>
 				<h2>Let's Try It!</h2>
 				<ul>
 					<li>Make changes to <code>README.md</code> and make some more commits.</li>
@@ -301,72 +375,119 @@ $ git log
 				<h4 style="margin-top: 30px;"> Don't forget to run <code class="green">git status</code> regularly so that you can see what is happening at each stage!</h4>
 			</section>
 
+			<!-- Seeing changes -->
+			<section>
+				<h3>Seeing changes</h3>
+				<div>
+					<p>Open <code>README.md</code> and make some changes to the file.</p>
+				</div>
+				<pre><code contenteditable class="bash">
+$ git status
+$ git diff
+				</code></pre>
+				<div class="fragment">
+					<pre><code>
+diff --git a/README.md b/README.md
+index e69de29..f5f34a6 100644
+--- a/README.md
++++ b/README.md
+@@ -0,0 +1 @@
++milk
++cheese
++bread
++mango slices
++peanut butter cups
+					</code></pre>
+					<p>This command shows exactly what is different.</p>
+				</div>
+			</section>
+
 			<!-- Undoing changes -->
 			<section>
-				<h3>Nobody's Perfect</h3>
-				<h4>Undoing local changes</h4>
+				<h3>Undoing local changes</h3>
 				<p>If you haven't staged/committed yet</p>
-				<div class="fragment">
+				<div>
 					<p>Open <code>README.md</code> and make some changes to the file.</p>
-					<pre><code contenteditable class="bash">
-$ git checkout README.md
-							</code></pre>
 				</div>
-				<p class="fragment">Look at <code>README.md</code>. Your changes are gone. You've gone back to the previous commit state.</p>
-			</section>
-
-			<section>
-				<h3>Nobody's Perfect</h3>
-				<h4>Remove a file from staging</h4>
-				<p>Create new file <code>my_new_file.txt</code></p>
-				<pre><code contenteditable class="bash">
-$ git add my_new_file.txt
-$ git reset my_new_file.txt
-							</code></pre>
-				<p>The file is removed from staging, but your working copy will be unchanged.</p>
-			</section>
-
-			<section>
-				<h3>Nobody's Perfect</h3>
-				<h4>Undoing staged changes</h4>
 				<div class="fragment">
-					<p>Open <code>README.md</code> and add some new text</p>
 					<pre><code contenteditable class="bash">
+$ git status
+$ git checkout README.md
+					</code></pre>
+					<p>Look at <code>README.md</code>. Your changes are gone. You've gone back to the previous commit state.</p>
+				</div>
+			</section>
+
+			<section>
+				<h3>Remove a file from staging</h3>
+				<p>Create a new file `<code>things_for_bbq.txt</code>`</p>
+				<div class="fragment">
+					<pre><code contenteditable class="bash">
+$ git status
+$ git add things_for_bbq.txt
+$ git status
+$ git reset things_for_bbq.txt
+$ git status
+					</code></pre>
+					<p>The file is removed from staging, but your working copy will be unchanged.</p>
+				</div>
+			</section>
+
+			<section>
+				<h3>Undoing staged changes</h3>
+				<div>
+					<p>Open <code>README.md</code> and add something to your grocery list that you hate</p>
+				</div>
+				<div class="fragment">
+					<pre><code contenteditable class="bash">
+$ git status
 $ git add README.md
+$ git status
 $ git reset HEAD README.md
 $ git status ## your changes were unstaged
 $ git checkout README.md
-							</code></pre>
+$ git status
+					</code></pre>
+					<p>Look at <code>README.md</code>. Your changes are gone and the file is removed from staging.</p>
+					<p>Huzzah, no sweetbreads in my kitchen!</p>
 				</div>
-				<p class="fragment">Look at <code>README.md</code>. Your changes are gone and the file is removed from staging.</p>
 			</section>
 
 			<section>
-				<h3>Nobody's Perfect</h3>
-				<h4>Undoing committed changes</h4>
+				<h3>Undoing committed changes</h3>
 				<p>Git lets you go back to any previous commit.</p>
+				<p>Open <code>README.md</code> and add back the thing you hate</p>
 				<div class="fragment">
-					<p>Open <code>README.md</code> and add some new text</p>
 					<pre><code class="bash">
 $ git add README.md
 $ git status
-$ git commit -m "Make a change I will soon regret making"
+$ git commit -m "Making a change I will soon regret"
+$ git status
 $ git log --oneline
-							</code></pre>
+					</code></pre>
+					<pre><code>
+a82c87f (HEAD -> master) Making a change I will soon regret
+21f659c Initial commit. Added README to repository.
+					</code></pre>
 					<p>Okay, I see the change… now how do I remove it?</p>
 				</div>
 				<aside class="notes">Now is a good time to talk about short commit hashes</aside>
 			</section>
 
 			<section>
-				<h3>Nobody's Perfect</h3>
-				<h4>Undoing committed changes</h4>
+				<h3>Undoing committed changes</h3>
 				<pre><code class="bash">
-$ git revert 53d23c4
+$ git revert a82c87f
 	# Your default editor will open here
-	# you can just save it and close it as is.
+	# you can just save it (`:wq`) and close it as is.
 $ git log --oneline
-						</code></pre>
+				</code></pre>
+				<pre><code>
+fa8a54f (HEAD -> master) Revert "Making a change I will soon regret"
+a82c87f Making a change I will soon regret
+d4c2432 added new text
+21f659c initial commit
+				</code></pre>
 				<p>Notice that the original, regrettable commit is still there, but now you also have <span class="green">another commit that undoes the changes</span> introduced by the original one.</p>
 			</section>
 
@@ -379,16 +500,34 @@ $ git log --oneline
 				<p class="fragment">Git shows you an easy way to do this: <a href="https://help.github.com/articles/ignoring-files/">.gitignore</a></p>
 			</section>
 
+			<section>
+				<h3>Adding .gitignore</h3>
+				<div>
+					<p>Create <code>`.gitignore`</code> and a new file <code>`secret_things.md`</code>. Add some new text to <code>`secret_things.md`</code></p>
+				</div>
+				<pre><code contenteditable class="bash">
+$ git status
+				</code></pre>
+				<div class="fragment">
+					<p>Now add <code>`secret_things.md`</code> to your <code>`.gitignore`</code> file.
+				</div>
+				<div class="fragment">
+					<pre><code contenteditable class="bash">
+$ git status
+					</code></pre>
+					<p>Git has received your command and removed the file from what it's watching!</p>
+				</div>
+			</section>
+
 			<!-- Branches-->
 			<section>
 				<h3>Branching</h3>
 				<img src="images/branches.jpg" alt="blue birds on branches" />
-				<p>A branch is another copy of your repo that allows you to isolate changes and leave the original copy untouched. You can choose to combine these changes in whole or part with the "master" copy later. </p>
+				<p>A branch is a copy of your repo that lets you isolate changes and leave the original copy untouched. You can choose to combine the branches in whole or part with the <span class="green">"master"</span> copy later.</p>
 
 			</section>
 			<section>
-				<h3>Branching</h3>
-				<p>Why Branch?</p>
+				<h3>Why Branch?</h3>
 				<ul>
 					<li>Develop different code on the same base</li>
 					<li>Conduct exploratory work without affecting the work on master branch</li>
@@ -398,42 +537,46 @@ $ git log --oneline
 			</section>
 			<section>
 				<h3>Branching</h3>
-				<p>Create a new branch called <code>my-feature</code></p>
+				<p>Create a new branch called <code>cake_ingredients</code></p>
 				<pre><code contenteditable class="bash">
-$ git checkout -b my-feature
+$ git checkout -b cake_ingredients
 						</code></pre>
 				<p>Add new lines to <code>README.md</code></p>
 				<pre><code contenteditable class="bash">
 $ git add README.md
-$ git commit -m "Adding changes to my-feature"
+$ git commit -m "Adding changes to cake_ingredients"
 						</code></pre>
 				<aside class="notes">This is a good time to talk about naming best practices</aside>
 			</section>
 			<section>
-				<h3>Branching</h3>
-				<h4>Switching Branches</h4>
+				<h3>Switching Branches</h3>
 				<p>See all branches. Branch with * is active</p>
 				<pre><code contenteditable class="bash">
 $ git branch
-						</code></pre>
-				<p>Switch to <code>master</code> and look at <code>README.md</code></p>
-				<pre><code contenteditable class="bash">
+$ git branch -v
+				</code></pre>
+				<div class="fragment">
+					<p>Switch to <code>master</code> and look at <code>README.md</code></p>
+					<pre><code contenteditable class="bash">
 $ git checkout master
-						</code></pre>
-				<p>Switch to <code>my-feature</code> and look at <code>README.md</code></p>
-				<pre><code contenteditable class="bash">
-$ git checkout my-feature
-						</code></pre>
+					</code></pre>
+				</div>
+				<div class="fragment">
+					<p>Switch to <code>cake_ingredients</code> and look at <code>README.md</code></p>
+					<pre><code contenteditable class="bash">
+$ git checkout cake_ingredients
+					</code></pre>
+				</div>
 			</section>
 
 			<!-- Merging-->
 			<section>
 				<h3>Merging</h3>
 				<p>Copying changes from one branch to another is called <span class="green">merging</span>.</p>
-				<p>Switch to <code>master</code> and merge the changes from the branch <code>my-feature</code></p>
+				<p>Switch to <code>master</code> and merge the changes from the branch <code>cake_ingredients</code></p>
 				<pre><code contenteditable class="bash">
 $ git checkout master
-$ git merge my-feature
+$ git merge cake_ingredients
 $ git log --oneline
 						</code></pre>
 			</section>
@@ -443,25 +586,23 @@ $ git log --oneline
 				<img src="images/merge-conflict.png" />
 			</section>
 			<section>
-				<h3>Merging</h3>
-				<h4>Merge Conflicts</h4>
+				<h3>Merge Conflicts</h3>
 				<p>Change first line in <code>README.md</code> in <code>master</code> branch</p>
 				<pre><code contenteditable class="bash">
 $ git add README.md
 $ git commit -m "Changing first line in master"
 						</code></pre>
-				<p>Change first line in <code>README.md</code> in <code>my-feature</code> branch</p>
+				<p>Change first line in <code>README.md</code> in <code>cake_ingredients</code> branch</p>
 				<pre><code contenteditable class="bash">
-$ git checkout my-feature
+$ git checkout cake_ingredients
 # open README.md and change first line
 $ git add README.md
-$ git commit -m "Changing first line in my-feature"
+$ git commit -m "Changing first line in cake_ingredients"
 						</code></pre>
 			</section>
 			<section>
-				<h3>Merging</h3>
-				<h4>Merge conflicts, cont.</h4>
-				<p>Merge from <code>master</code> into <code>my-feature</code></p>
+				<h3>Merge Conflicts</h3>
+				<p>Merge from <code>master</code> into <code>cake_ingredients</code></p>
 				<pre><code contenteditable class="bash">
 $ git merge master
 						</code></pre>
@@ -489,12 +630,18 @@ $ git merge master
 				<h3>GitHub</h3>
 				<h4>Create your first remote repository</h4>
 				<p>You will need to be logged into your GitHub account to do this.</p>
-				<img src="images/new-repo-menu-gdibtv.png" alt="" />
+				<img src="images/lbk/newRepo1.png" alt="" />
 			</section>
 			<section>
 				<h3>GitHub</h3>
 				<h4><a href="https://help.github.com/articles/create-a-repo/">Create your first repository</a></h4>
-				<img src="images/new-repo-screen-gdibtv.png" alt="" />
+				<img src="images/lbk/newRepo2.png" alt="" />
+				<div class="fragment" style="position: absolute; top: 175px; outline: red solid thick;">
+					<img style="margin: 0;" src="images/lbk/newRepo3.png" alt="" />
+				</div>
+				<div class="fragment" style="position: absolute; top: 400px; outline: red solid thick;">
+					<img style="margin: 0;" src="images/lbk/newRepo4.png" alt="" />
+				</div>
 				<aside class="notes">Recommend that they name this the same as their local repo</aside>
 			</section>
 
@@ -504,7 +651,7 @@ $ git merge master
 				<p> After you click the big green button to create your repo, follow GitHub's instructions for next steps. </p>
 
 				<pre><code class ="command-line">
-$ git remote add origin https://github.com/YOUR-GITHUB-USERNAME/REPO.git
+$ git remote add origin https://github.com/YOUR-GITHUB-USERNAME/grocery-list.git
 $ git push -u origin master
 
 # that -u is an option that signals that you are setting
@@ -535,31 +682,91 @@ $ git push origin master
 			</section>
 
 			<section>
+				<div
+					style="transform: rotate(-20deg); right: 0; margin-top: -190px; z-index:2; position: absolute; background-color: red; padding: 5px; border-radius: 10px; color: white;">
+					PAIRING!
+				</div>
 				<h3>Shared Repos</h3>
 				<p>If team members are contributing to a single repo, each member of the team will want to make sure that she has everyone else's changes before pushing her own changes to the remote repository.</p>
-				<div class="fragment">
-					<p class="green">Always pull before you push!</p>
+
+			</section>
+
+			<section>
+				<div
+					style="transform: rotate(-20deg); right: 0; margin-top: -120px; z-index:2; position: absolute; background-color: red; padding: 5px; border-radius: 10px; color: white;">
+					PAIRING!
 				</div>
+				<h3>Cloning</h3>
+				<p>If you want to use or contribute to a repository, you have to <span class="green">clone</span> it to your computer.</p>
+				<pre><code class ="command-line">
+$ cd ../
+
+$ git clone https://github.com/LBKinson/grocery-list.git
+
+$ cd grocery-list
+$ git remote -v
+				</code></pre>
+			</section>
+
+			<section>
+				<div
+					style="transform: rotate(-20deg); right: 0; margin-top: -120px; z-index:2; position: absolute; background-color: red; padding: 5px; border-radius: 10px; color: white;">
+					PAIRING!
+				</div>
+				<h3>Share Your Repo</h3>
+				<img style="max-height: 200px;" src="images/lbk/clone.png" />
+				<p>Clone into a neighbor's repo</p>
+				<pre><code class="command-line">
+$ git clone https://github.com/LBKinson/grocery-list.git
+				</code></pre>
 			</section>
 
 			<section>
 				<h3>Pulling</h3>
+				<div>
+					<p class="green">Always pull before you push!</p>
+				</div>
 				<p>Commit local changes first</p>
-				<pre><code class ="command-line">
+				<pre><code class="command-line">
 $ git commit -m "My latest commit"
 				</code></pre>
 				<p>Get changes that have been pushed</p>
-				<pre><code class ="command-line">
+				<pre><code class="command-line">
 $ git pull origin master
 				</code></pre>
 				<p>Git may prompt you to fix any conflicts, then commit</p>
-				<pre><code class ="command-line">
+				<pre><code class="command-line">
 $ git commit -m "Fixing merging conflicts"
 				</code></pre>
 				<p>Now you are ready to push local changes to GitHub</p>
-				<pre><code class ="command-line">
+				<pre><code class="command-line">
 $ git push origin master
 				</code></pre>
+			</section>
+
+			<section>
+				<h3>Pull Requests</h3>
+				<p>Commonly used to review code, <span class="green">pull requests</span> allow you to submit code to a public repo.</p>
+				<div class="fragment">
+					<p>In your neighbor's repo, checkout a new branch and add a file with new text</p>
+					<pre><code class="bash">
+$ git checkout -b lauras-groceries
+$ touch laura_loves_cheese.md
+$ git status
+$ git add .
+$ git commit -m 'Putting cheese on your grocery list'
+$ git push origin lauras-groceries
+					</code></pre>
+				</div>
+			</section>
+
+			<section>
+				<h3>Pull Requests</h3>
+				<p>Now online in their repo, open a pull request with the base as <code>`master`</code> comparing <code>`lauras-groceries`</code></p>
+				<img src="images/lbk/pullRequest.png" />
+				<div class="fragment">
+					<p>Now your neighbor can <span class="green">comment</span> on your code, ask clarifying <span class="green">questions</span>, and <span class="green">approve</span> it when they're ready to <span class="green">merge</span>. All in a publically accessible, on-the-record space.</p>
+				</div>
 			</section>
 
 
@@ -569,29 +776,16 @@ $ git push origin master
 				<p>There are <span class="green">MILLIONS</span> of public repositories on GitHub.</p>
 				<p>There are huge open source projects (<a href="https://github.com/git/git" target="_blank">including Git!</a>)…</p>
 				<p>…and small projects like these slides.</p><br>
-				<h4>Collaborating</h4>
-				<p>If you want to use or contribute to a repository, you have to <span class="green">fork</span> the repository, then <span class="green">clone</span> it to your computer.</p>
 				<p>A fork is just a copy of a repository, saved to GitHub.</p>
 			</section>
+
 			<section>
 				<h3>Forking</h3>
 				<img src="images/fork-gdi.png" alt="How to fork a repository." />
 				<p>After you fork the repository, it shows up in your repositories.</p>
-				<img src="images/fork-gdi-btv.png" alt="A forked repository." />
+				<img src="images/lbk/fork.png" alt="A forked repository." />
 				<p>Let's Try It! <a href="https://github.com/GDIBTV/git-resources">Fork this repo.</a></p>
 				<p><small>You can only fork repos through the GitHub website.</small></p>
-			</section>
-			<section>
-				<h3>Cloning</h3>
-				<p>To get a local copy of the fork you just made, use the <code class="green">git clone</code> command.</p>
-				<pre><code class ="command-line">
-$ cd ../
-
-$ git clone https://github.com/USERNAME/git-resources.git
-
-$ cd git-resources
-$ git remote -v
-				</code></pre>
 			</section>
 			<section>
 				<h3>Girl Developer <br>and the Three Repositories</h3>
@@ -623,29 +817,6 @@ $ git fetch upstream
 
 			</section>
 
-			<!-- Pull requests-->
-			<section>
-				<h3>Pull Requests</h3>
-				<p class="fragment">After you <code>fork</code> and <code>clone</code> a repository all pushed changes will go to your fork (<code>origin</code>)</p>
-				<p class="fragment">These changes do not affect the original (<code>upstream</code>) repository (mostly because permissions). To do that, you need to submit a pull request.</p>
-				<p class="fragment">A <span class="green">pull request</span> is a GitHub feature that lets you ask the owner of the upstream repo to pull your changes in.</p>
-			</section>
-			<section>
-				<h3>Starting a Pull Request</h3>
-				<img src="images/click-pull-request.png" alt="How to initiate a pull request. Image from https://help.github.com/articles/using-pull-requests" />
-				<p>Pull requests can only be done through the GitHub website.</p>
-			</section>
-			<section>
-				<h3>Opening Pull Requests</h3>
-				<img src="images/pull-request-review-page.png" alt="How to preview and send a pull request. Image from https://help.github.com/articles/using-pull-requests" />
-				<aside class="notes">Acceptable tangent: style guides and contribution outlines</aside>
-			</section>
-			<section>
-				<h3>Managing Pull Requests</h3>
-				<p>Repo owners review and decide whether to merge in the pull requests they receive.</p>
-				<p>You can learn more from the <br><a href="https://help.github.com/categories/63/articles" target="_blank" alt="Links to tutorials on pull requests and collaboration">Github Collaborating Tutorials</a>
-			</section>
-
 			<!-- Develop It -->
 			<section>
 				<h2>Let's Try It!</h2>
@@ -661,14 +832,18 @@ $ git fetch upstream
 				<h2>Thank You!</h2>
 
 				<p>Keep in touch!</p>
-				<p><a href="mailto:rachaela@girldevelopit.com">rachaela@girldevelopit.com</a></p>
-				<p><a href="http://www.raearnold.com/">raearnold.com</a></p>
+				<p><a href="mailto:laura.kinson@gmail.com">laura.kinson@gmail.com</a></p>
+				<p><a href="http://www.twitter.com/LBKinson">@LBKinson</a></p>
 			</section>
 		</div>
 		<footer>
-			<div class="copyright">
-				Intro to Git and Github -- Girl Develop It Burlington --
-				<a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png" /></a>
+			<div class="copyright" style="display: flex; justify-content: space-between; z-index:2; margin: 0 0 0 110px;">
+				<div>
+					Intro to Git and Github -- &copy;<a href="https://www.girldevelopit.com/chapters/burlington" target="_blank">Girl Develop It Burlington</a> -- Altered by <a href="https://twitter.com/lbkinson" target="_blank">LBKinson</a>
+				</div>
+				<div>
+					<a rel="license" style="z-index:2;" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png" /></a>
+				</div>
 			</div>
 		</footer>
 	</div>
